@@ -1,0 +1,13 @@
+name: General workflow file
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # runs at specified time (UTC)
+  workflow_dispatch: # allows manual triggering of the workflow
+
+jobs:
+    run-script:
+        runs-on: ubuntu-latest
+        
+        steps:
+        - uses: 
